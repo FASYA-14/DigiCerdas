@@ -1,0 +1,6 @@
+{
+  "name": "DigiCerdas",
+  "description": "Program Informasi dan Pelatihan Literasi Digital Berbasis Generative AI untuk Murid dan Guru.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
