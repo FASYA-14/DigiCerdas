@@ -42,9 +42,11 @@ export default function App() {
 
   const [studentName, setStudentName] = useState<string>(() => {
     try {
-      return localStorage.getItem('digicerdas_student_name') || 'Fasya Rahmawati';
+      const stored = localStorage.getItem('digicerdas_student_name');
+      if (stored && stored !== 'Fasya Rahmawati') return stored;
+      return 'Yahfasyat Asabir Abuya';
     } catch {
-      return 'Fasya Rahmawati';
+      return 'Yahfasyat Asabir Abuya';
     }
   });
 
